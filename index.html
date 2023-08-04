@@ -156,7 +156,9 @@
         <fieldset>
           <legend class="introduction">Leave a Recommendation</legend>          
           <input type="text" placeholder="Name (Optional)"> <br/>
+          <form onsubmit="remFocus">
           <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message" onblur="blank_check(false)" onkeypress="blank_check()"></textarea>
+            </form>
           <span id="warning"></span>
           <div class="flex_center">
             <button id="recommend_btn" onclick="addRecommendation();blank_check(true)">Submit</button>
