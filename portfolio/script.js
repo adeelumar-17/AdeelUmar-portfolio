@@ -55,7 +55,8 @@ function blank_check(bool)
 function blankCheckHandler() {
   blank_check(false);
 }
-document.addEventListener("submit", function(){
-var temp=document.getElementById("new_recommendation");
+function remFocus(){
+    var temp=document.getElementById("new_recommendation");
     temp.blur();
-});
+}
+
