@@ -24,9 +24,6 @@ function addRecommendation()
     // Reset the value of the textarea
     recommendation.value = "";
     showPopup(true);
-
-    //focus on popup
-      Focus();
    }
  }
 }
@@ -58,7 +55,7 @@ function blank_check(bool)
 function blankCheckHandler() {
   blank_check(false);
 }
-function Focus(){
-  var popup=document.getElementById("popup");
-  popup.focus();
-}
+document.addEventListener("click", function(){
+var temp=document.getElementById("new_recommendation");
+    temp.blur();
+});
