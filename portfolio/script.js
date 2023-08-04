@@ -20,13 +20,13 @@ function addRecommendation()
     element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
     // Add this element to the end of the list of recommendations
     document.getElementById("all_recommendations").appendChild(element); 
-
-    //remove focus from the text box
-    removeFocus();
     
     // Reset the value of the textarea
     recommendation.value = "";
     showPopup(true);
+
+    //focus on popup
+      Focus();
    }
  }
 }
@@ -58,7 +58,7 @@ function blank_check(bool)
 function blankCheckHandler() {
   blank_check(false);
 }
-function removeFocus(){
-  var textBox=document.getElementById("new_recommendation");
-  textBox.blur();
+function Focus(){
+  var popup=document.getElementById("popup");
+  popup.focus();
 }
